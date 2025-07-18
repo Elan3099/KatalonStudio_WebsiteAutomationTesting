@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Save File to Katalon Directory</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4b349de2-d6f7-46dc-9a99-146d45e8916e</testCaseGuid>
+</TestCaseEntity>
