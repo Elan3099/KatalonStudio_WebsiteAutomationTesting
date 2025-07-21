@@ -39,39 +39,59 @@ String filePath = RunConfiguration.getProjectDir() + '/Dokumen/JMK_SUR_2024_11_8
 String label_Judul = CustomKeywords.'validatePDF.extractRegion'(filePath, 0, 290, 25, 260, 50)
 KeywordUtil.logInfo("(TITLE) : "+label_Judul)
 
+CustomKeywords.'validatePDF.validateFunction'(label_Judul, "jaminan")
+
 // NO PERMOHONAN
 String No_Permohonan = CustomKeywords.'validatePDF.extractRegion'(filePath, 0, 13, 160, 230, 20)
 KeywordUtil.logInfo("(No Permohonan) : "+No_Permohonan)
+
+CustomKeywords.'validatePDF.validateFunction'(No_Permohonan, "JMK/SUR/2024/11/8/000001")
 
 // NILAI JAMINAN
 String Nilai_Jaminan = CustomKeywords.'validatePDF.extractRegion'(filePath, 0, 643, 136, 180, 20)
 KeywordUtil.logInfo("(Nilai Jaminan) : "+Nilai_Jaminan)
 
+CustomKeywords.'validatePDF.validateFunction'(Nilai_Jaminan, "Rp 12.000.000.000,00")
+
+
 // UANG SEJUMLAH
 String uang_sejumlah = CustomKeywords.'validatePDF.extractRegion'(filePath, 0, 558, 226, 180, 15)
 KeywordUtil.logInfo("(Uang Sejumlah) : "+uang_sejumlah)
+
+CustomKeywords.'validatePDF.validateFunction'(uang_sejumlah, "Rp 12.000.000.000,00")
 
 // TANGGAL DOKUMEN PENGADAAN
 String tgl_doc_pengadaan = CustomKeywords.'validatePDF.extractRegion'(filePath, 0, 434, 269, 87, 15)
 KeywordUtil.logInfo("(Tanggal Dokumen Pengadaan) : "+tgl_doc_pengadaan)
 
+CustomKeywords.'validatePDF.validateFunction'(tgl_doc_pengadaan, "tanggal 10 Juli 2025")
+
 // SURAT JAMINAN BERLAKU
 String surat_jaminan_berlaku = CustomKeywords.'validatePDF.extractRegion'(filePath, 0, 33, 450, 175, 15)
 KeywordUtil.logInfo("(Surat Jaminan Berlaku) : "+surat_jaminan_berlaku)
+
+CustomKeywords.'validatePDF.validateFunction'(surat_jaminan_berlaku, "120")
 
 // EFEKTIF MULAI TANGGAL
 String efektir_mulai_tgl = CustomKeywords.'validatePDF.extractRegion'(filePath, 0, 380, 454, 300, 15)
 KeywordUtil.logInfo("(Efektif Mulai Tanggal) : "+efektir_mulai_tgl)
 
+CustomKeywords.'validatePDF.validateFunction'(efektir_mulai_tgl, "08 November 2024 s.d. 07 Maret 2025")
 
 //PAGE 2
 // PT TERJAMIN
 String pt_terjamin_ttd = CustomKeywords.'validatePDF.extractRegion'(filePath, 1, 26, 89, 200, 100)
 KeywordUtil.logInfo("(PT Terjamin) : "+pt_terjamin_ttd)
 
+CustomKeywords.'validatePDF.validateFunction'(pt_terjamin_ttd, "PT POWER SEJATI")
+CustomKeywords.'validatePDF.validateFunction'(pt_terjamin_ttd, "TERJAMIN")
+
 // TTD TERJAMIN AKTOR
 String ttd_terjamin = CustomKeywords.'validatePDF.extractRegion'(filePath, 1, 29, 207, 200, 70)
 KeywordUtil.logInfo("(TTD TERJAMIN) : "+ttd_terjamin)
+
+CustomKeywords.'validatePDF.validateFunction'(ttd_terjamin, "DETI SAUDI")
+CustomKeywords.'validatePDF.validateFunction'(ttd_terjamin, "DIREKTUR")
 
 // PENJAMIN TDD
 String ttd_penjamin = CustomKeywords.'validatePDF.extractRegion'(filePath, 1, 393, 195, 500, 70)
