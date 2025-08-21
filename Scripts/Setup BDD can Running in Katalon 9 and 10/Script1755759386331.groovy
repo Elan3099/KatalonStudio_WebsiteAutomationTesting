@@ -17,10 +17,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Map<String, Object> prefs = new HashMap<String, Object>()
-prefs.put("download.prompt_for_download", false)
-prefs.put("safebrowsing.enabled", true)
-prefs.put("safebrowsing.disable_download_protection", true) // Tidak direkomendasikan untuk production!
-ChromeOptions options = new ChromeOptions()
-options.setExperimentalOption("prefs", prefs)
-
+/* 
+  
+  Setup Katalon Studio Agar BDD bisa running di versi 9 / 10
+  
+  1. Buat file TestListener di folder Test Listener
+  
+  2. Copy / sesuaikan isinya sesuai dengan file TestListener yang dibuat dalam project file ini.
+  		--- isinya merupakan script untuk memanggil default glue cucumber
+  		--- glue Cucumber merupakan framework atau semacam struktur yang telah tersedia untuk menghubungkan atau sebagai jembatan antara feature dengan groovy
+  
+  3. Buat file feature seperti biasa di include/features
+  
+  4. Buat file step definition groovy seperti biasa di include/groovy/ dengan package baru (jangan menggunakan package default)
+  
+  5. Jalankan featurenya
+  
+*/

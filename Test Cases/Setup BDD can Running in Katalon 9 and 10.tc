@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Download secure document</name>
+   <name>Setup BDD can Running in Katalon 9 and 10</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>6d49e5cf-6505-4613-ba1c-9944dc5196bc</testCaseGuid>
+   <testCaseGuid>6de97bb3-9407-4d62-bb85-2fb3eada8f09</testCaseGuid>
 </TestCaseEntity>
